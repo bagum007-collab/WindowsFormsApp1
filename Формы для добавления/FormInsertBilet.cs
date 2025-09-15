@@ -42,6 +42,7 @@ namespace WindowsFormsApp1.Формы_для_добавления
                     textBox3.Clear();
                     textBox4.Clear();
                    textBox5.Clear();
+                Konoha home;
    
                 }
                 catch (Exception ex)
