@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58784D30-0D30-4D6E-A7DA-EAF25F3C313A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Film.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Film.Designer.cs">
+      <DependentUpon>Film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="database.cs" />
+    <Compile Include="FormBilet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBilet.Designer.cs">
+      <DependentUpon>FormBilet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKinoteatr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKinoteatr.Designer.cs">
+      <DependentUpon>FormKinoteatr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPolzovatel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPolzovatel.Designer.cs">
+      <DependentUpon>FormPolzovatel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPoseshenie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPoseshenie.Designer.cs">
+      <DependentUpon>FormPoseshenie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuery.Designer.cs">
+      <DependentUpon>FormQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSeans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSeans.Designer.cs">
+      <DependentUpon>FormSeans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZal.Designer.cs">
+      <DependentUpon>FormZal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KinoteatrDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KinoteatrDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertBilet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertBilet.Designer.cs">
+      <DependentUpon>FormInsertBilet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertFilm.Designer.cs">
+      <DependentUpon>FormInsertFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertKinoteatr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertKinoteatr.Designer.cs">
+      <DependentUpon>FormInsertKinoteatr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertPolzovatel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertPolzovatel.Designer.cs">
+      <DependentUpon>FormInsertPolzovatel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertPoseshenie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertPoseshenie.Designer.cs">
+      <DependentUpon>FormInsertPoseshenie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertSeans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertSeans.Designer.cs">
+      <DependentUpon>FormInsertSeans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertZal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Формы для добавления\FormInsertZal.Designer.cs">
+      <DependentUpon>FormInsertZal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Film.resx">
+      <DependentUpon>Film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBilet.resx">
+      <DependentUpon>FormBilet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKinoteatr.resx">
+      <DependentUpon>FormKinoteatr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPolzovatel.resx">
+      <DependentUpon>FormPolzovatel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPoseshenie.resx">
+      <DependentUpon>FormPoseshenie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuery.resx">
+      <DependentUpon>FormQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSeans.resx">
+      <DependentUpon>FormSeans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZal.resx">
+      <DependentUpon>FormZal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Формы для добавления\FormInsertBilet.resx">
+      <DependentUpon>FormInsertBilet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Формы для добавления\FormInsertFilm.resx">
+      <DependentUpon>FormInsertFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Формы для добавления\FormInsertKinoteatr.resx">
+      <DependentUpon>FormInsertKinoteatr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Формы для добавления\FormInsertPolzovatel.resx">
+      <DependentUpon>FormInsertPolzovatel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Формы для добавления\FormInsertPoseshenie.resx">
+      <DependentUpon>FormInsertPoseshenie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Формы для добавления\FormInsertSeans.resx">
+      <DependentUpon>FormInsertSeans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Формы для добавления\FormInsertZal.resx">
+      <DependentUpon>FormInsertZal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="KinoteatrDataSet.xsc">
+      <DependentUpon>KinoteatrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KinoteatrDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KinoteatrDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KinoteatrDataSet.xss">
+      <DependentUpon>KinoteatrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rin-tohsaka-archer-fate-stay-night-2560x1440.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Аято.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\лучшие игроки.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CRONxszyA2M.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 красавицы из геншин.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FateExtella-English-Trailers-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 брата Дилюк и Кейя.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fateextellalink_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e58bb655ae592bdc37136d910dfff69c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Неро и Томамо %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Столбы.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Эн Такамаки.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 брата Дилюк и Кейя1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 брата Дилюк и Кейя2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 брата Дилюк и Кейя3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 брата Дилюк и Кейя4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 красавицы из геншин1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 брата Дилюк и Кейя5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 брата Дилюк и Кейя6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bdb45c8a7fbb3155db7ab9a713cc1688.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Хвост феи.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Эн Такамаки1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Эн Такамаки %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\яэ мико.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Аказа 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rwby-weiss-schnee-bishojo-pretty-anime-japonese-kawaii-swo-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\команда RWBY %282%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
